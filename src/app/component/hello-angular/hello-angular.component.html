@@ -1,0 +1,27 @@
+<p>hello-angular works!</p>
+
+<h1>Ngo gia tu</h1>
+
+<p>{{abc}}</p>
+<p>{{xyz}}</p>
+<p>{{bcd}}</p>
+
+<button (click)="app(n1, n2)">ADD</button>
+
+<label for="">a</label>
+<input type="number" [(ngModel)]="n1">
+<label for="">b</label>
+<input type="number" [(ngModel)]="n2">
+
+<table class="table bordered" border="1">
+  <tr>
+    <th>Tên</th>
+    <th>Tuổi</th>
+    <th>Địa chỉ</th>
+  </tr>
+  <tr *ngFor="let c of mang1">
+    <td>{{c.ten}}</td>
+    <td>{{c.tuoi}}</td>
+    <td>{{c.diaChi}}</td>
+  </tr>
+</table>
