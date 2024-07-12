@@ -1,0 +1,38 @@
+body{
+  background: linear-gradient(to right, #34B7A2, #34B7A2, #34B7A2, #34B7A2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.box-login{
+  width: 350px;
+  max-width: 250px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  height: 250px;
+}
+.box-login h3{
+  padding: 10px;
+  text-align: center;
+  color: #25d5c6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+form .but{
+  text-align: center;
+  background-color: #25d5c6;
+  border-radius: 3px;
+  border: none;
+  font-size: small;
+  padding: 8px;
+}
+.input{
+  padding-bottom: 10px;
+  text-align: center;
+}
+input .input{
+  border: 2px solid lightgray;
+}
