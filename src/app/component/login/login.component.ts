@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { LoginService } from '../../login.service';
-import { User } from '../../user';
+import { User } from '../entity/user';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 

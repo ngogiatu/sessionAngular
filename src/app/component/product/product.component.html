@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Danh sách sản phẩm</h1>
+  <table class="table">
+    <thead>
+      <th>id</th>
+      <th>name</th>
+      <th>Create At</th>
+      <th>Action</th>
+    </thead>
+    <tbody>
+      <tr class="ho" *ngFor="let p of product" (click)="detai(p.id)">
+        <td>{{p.id}}</td>
+        <td>{{p.productname}}</td>
+        <td>{{p.createat}}</td>
+        <td>
+          <button (click)="detai(p.id)">Detail</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="this.productDetail.length > 0">
+    <h1>Danh sách sản phẩm chi tiết của {{productIselected.productname}}</h1>
+    <h1>Danh sách sản phẩm</h1>
+  <table class="table bordered">
+    <thead>
+      <th>id</th>
+      <th>Price</th>
+      <th>Color</th>
+      <th>Size</th>
+    </thead>
+    <tbody>
+      <tr style="background-color: red;" *ngFor="let pd of productDetail">
+        <td>{{pd.id}}</td>
+        <td>{{pd.price | currency: 'VND'}}</td>
+        <td>{{pd.color}}</td>
+        <td>{{pd.size}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  </div>
+
+</body>
+</html>
