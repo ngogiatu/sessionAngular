@@ -52,4 +52,15 @@ export class ProductComponent implements OnInit{
     private productService: ProductService
   ){}
 
+  productDetailIsSelected: any = null;
+
+  clickChange(idPd: number){
+    alert('ID = ' + idPd);
+    this.productDetail.forEach(pd => {
+      if(pd.id === idPd){
+        this.productDetailIsSelected = pd;
+        console.log(this.productDetailIsSelected);
+      }
+    })
+  }
 }
